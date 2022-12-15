@@ -31,17 +31,14 @@
   left: 64px;
 }
 
-.container {
-  align-self: center;
-  width: 730px;
-  margin-left: 64px;
-}
-
 .header__title {
   font-weight: 600;
   font-size: 102px;
   line-height: 96px;
   margin: 0;
+  align-self: center;
+  width: 730px;
+  margin-left: 64px;
 }
 
 .header__subtitle {
@@ -88,9 +85,6 @@
 
 .two-columns__brief {
   width: 175px;
-}
-
-.two-columns__brief-heading {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -108,16 +102,17 @@
   font-size: 24px;
   font-weight: normal;
   margin: 0;
+  padding-bottom: 30px;
+}
+
+.two-columns__paragraph:last-child {
+  padding-bottom: 0;
 }
 
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
-}
-
-.two-columns__paragraph_margin-bottom {
-  margin-bottom: 30px;
 }
 
 /* Digits */
@@ -172,15 +167,13 @@
   font-size: 18px;
   font-weight: normal;
   margin: 0;
+  padding-bottom: 20px;
 }
 
-.table__text_signature {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  margin: 0;
-  padding-top: 20px;
+.table__text:last-child {
+  padding-bottom: 0;
 }
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -194,13 +187,8 @@
   background-color: #f2f2f2;
   position: relative;
   height: 890px;
-}
-
-.feynman__title-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .feynman__title {
@@ -208,15 +196,17 @@
   font-size: 120px;
   font-weight: 600;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   width: 648px;
+  padding-top: 100px;
+  z-index: 1;
 }
 
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   padding-top: 70px;
   z-index: 1;
@@ -246,11 +236,6 @@
   position: relative;
   margin: 0 auto;
   overflow: hidden;
-}
-
-.kaufman__cover {
-  margin-top: 90px;
-  margin-bottom: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -262,6 +247,7 @@
   font-weight: 600;
   margin: 0;
   padding-bottom: 20px;
+  padding-top: 90px;
 }
 
 .kaufman__title_theme-dark {
@@ -301,6 +287,10 @@
   z-index: 0;
 }
 
+.table_theme-dark {
+  padding-bottom: 90px;
+}
+
 /* Footer */
 .footer {
   min-height: 350px;
@@ -309,7 +299,7 @@
 
 .footer__columns {
   margin: 0 auto;
-  min-height: 350px;
+  min-height: inherit;
   width: 90%;
   display: flex;
   justify-content: space-between;
