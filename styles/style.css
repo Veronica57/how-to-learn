@@ -37,19 +37,36 @@
   line-height: 96px;
   margin: 0;
   align-self: center;
-  width: 730px;
-  margin-left: 64px;
+  max-width: 730px;
+  width: 100%;
+  padding-left: 64px;
+  z-index: 2;
 }
 
 .header__subtitle {
   position: absolute;
   bottom: 30px;
   left: 64px;
-  width: 380px;
+  max-width: 388px;
+  width: 100%;
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
   margin: 0;
+  z-index: 2;
+}
+
+.header__link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #062d5f;
+  cursor: pointer;
 }
 
 .header__main-illustration {
@@ -84,7 +101,8 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
+  width: 100%;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -123,7 +141,7 @@
   align-items: center;
 }
 
-.digits__title {
+.section-title {
   width: 60%;
   margin: 0;
   text-align: center;
@@ -133,7 +151,7 @@
   padding-bottom: 20px;
 }
 
-.digits__subtitle {
+.section-subtitle {
   width: 60%;
   margin: 0;
   text-align: center;
@@ -147,11 +165,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
+  margin: 0;
+  padding: 0;
 }
 
 .table__cell {
   margin-top: 60px;
   width: 250px;
+  list-style-type: none;
 }
 
 .table__heading {
@@ -174,19 +195,11 @@
   padding-bottom: 0;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
-
 /* Feynman */
 .feynman {
   background-color: #f2f2f2;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   display: flex;
   flex-direction: column;
 }
@@ -197,7 +210,8 @@
   font-weight: 600;
   text-align: center;
   margin: 0 auto;
-  width: 648px;
+  max-width: 648px;
+  width: 100%;
   padding-top: 100px;
   z-index: 1;
 }
@@ -218,8 +232,16 @@
   font-weight: normal;
   margin: 0;
   position: absolute;
-  top: calc(0.5 * 890px);
+  top: 50%;
   right: 48px;
+  color: #2f80ed;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.feynman__link:hover {
+  color: #062d5f;
+  cursor: pointer;
 }
 
 .feynman__image {
@@ -232,7 +254,7 @@
 
 /* Kaufman */
 .kaufman {
-  background-color: #000;
+  background-color: #1f1f1f;
   position: relative;
   margin: 0 auto;
   overflow: hidden;
@@ -241,60 +263,43 @@
   align-items: center;
 }
 
-.kaufman__title {
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  margin: 0;
-  padding-bottom: 20px;
-  padding-top: 90px;
-}
-
-.kaufman__title_theme-dark {
+.section-title_theme_dark {
+  margin-top: 90px;
   color: #fff;
-}
-
-.kaufman__subtitle {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.kaufman__subtitle_theme-dark {
-  color: #fff;
-}
-
-.table__cell_theme-dark {
-  width: 200px;
   z-index: 1;
 }
 
-.table__heading_theme-dark {
+.section-subtitle_theme_dark {
   color: #fff;
+  z-index: 1;
 }
 
-.table__text_theme-dark {
-  color: #fff;
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+  z-index: 1;
+}
+
+.table_theme_dark {
+  margin-bottom: 90px;
 }
 
 .kaufman__triangle {
+  background-image: url(../images/kaufman-triangle.svg);
   width: 877px;
   height: 877px;
   position: absolute;
   right: -210px;
   top: 0;
-  z-index: 0;
-}
-
-.table_theme-dark {
-  padding-bottom: 90px;
 }
 
 /* Footer */
 .footer {
   min-height: 350px;
-  background-color: #000;
+  background-color: #1f1f1f;
 }
 
 .footer__columns {
@@ -305,6 +310,8 @@
   justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer__column_content-copyright {
@@ -321,6 +328,10 @@
   color: #fff;
   margin: 0;
   padding: 18px 0 18px 0;
+}
+
+.footer__column {
+  list-style-type: none;
 }
 
 .footer__column-heading {
