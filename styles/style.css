@@ -289,6 +289,8 @@
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -300,6 +302,7 @@
 .footer {
   min-height: 350px;
   background-color: #1f1f1f;
+  display: flex;
 }
 
 .footer__columns {
@@ -308,13 +311,7 @@
   justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 40px;
-  padding-left: 0;
-  padding-right: 0;
   margin: 0 auto;
-}
-
-.footer__column {
-  list-style-type: none;
 }
 
 .footer__author {
@@ -331,12 +328,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 250px;
 }
 
 .footer__column-links {
-  padding: 0;
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
