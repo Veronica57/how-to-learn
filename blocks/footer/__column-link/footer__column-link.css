@@ -4,4 +4,11 @@
   font-size: 18px;
   font-weight: normal;
   text-decoration: none;
+  transition: color 4s ease-in-out, opacity 4s ease-in-out;
+}
+
+.footer__column-link:hover {
+  color: #2f80ed;
+  cursor: pointer;
+  opacity: 30%;
 }

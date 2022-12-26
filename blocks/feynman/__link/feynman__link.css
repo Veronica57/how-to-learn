@@ -9,9 +9,11 @@
   color: #2f80ed;
   text-decoration: none;
   z-index: 1;
+  transition: color 4s ease-in-out, opacity 4s ease-in-out;
 }
 
 .feynman__link:hover {
   color: #062d5f;
   cursor: pointer;
+  opacity: 30%;
 }

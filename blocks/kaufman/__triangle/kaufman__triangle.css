@@ -7,4 +7,5 @@
   position: absolute;
   right: -210px;
   top: 0;
+  animation: rotation 20s cubic-bezier(0.42, 0, 0.58, 1) infinite normal;
 }

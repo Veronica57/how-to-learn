@@ -1,0 +1,8 @@
+/* Techniques */
+.techniques {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
