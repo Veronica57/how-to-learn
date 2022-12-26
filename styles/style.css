@@ -363,3 +363,67 @@
   color: #2f80ed;
   cursor: pointer;
 }
+
+/* Techniques */
+.techniques {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.cards {
+  max-width: 920px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid red;
+  width: 240px;
+  margin-top: 60px;
+}
+
+.cards__title {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  padding-top: 43px;
+  padding-bottom: 16px;
+}
+
+.cards__description {
+  line-height: 24px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+}
+
+.cards__image {
+  height: 160px;
+  width: 160px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 50%;
+}
+
+/* video */
+
+.video {
+  margin: 0 auto;
+}
+
+.video__iframes {
+  display: flex;
+  flex-direction: column;
+}
