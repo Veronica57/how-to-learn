@@ -1,5 +1,5 @@
 @import url(../vendor/normalize.css);
-@import url(../root/root.css);
+@import url(../blocks/root/root.css);
 @import url(../blocks/rotate/rotate.css);
 /* Header */
 @import url(../blocks/header/header.css);
@@ -63,7 +63,6 @@
 @import url(../blocks/table/_theme/table_theme_dark.css);
 @import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
 @import url(../blocks/table/__heading/_theme/table__heading_theme_dark.css);
-@import url(../blocks/table/__text/table__text.css);
 /* Resources */
 @import url(../blocks/resources/resources.css);
 @import url(../blocks/resources/__link/resources__link.css);
